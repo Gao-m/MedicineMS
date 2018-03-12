@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{% block dataview %}
+    <div class="data-view-areas">
+        <div class="login-content">
+            <div class="logincon">
+                <h3>登录入口 <font>UserLogin</font></h3>
+            </div>
+             <form action="" method="post">
+                 {% csrf_token %}
+                <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user-o fa-fw"></i></span>
+                      <input name="username" class="form-control" type="text" placeholder="User">
+                </div>
+                <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                      <input name="password" class="form-control" type="password" placeholder="Password">
+                </div>
+                <div class="btn-group" style="width: 80%!important;margin-left: 40px;">
+                        <button class="btn btn-success" style="width: 100%;" type="submit">登录</button>
+                </div>
+             </form>
+        </div>
+    </div>
+    <div class="footer">
+          适用浏览器: IE10以上、FireFox、Chrome  &nbsp;Copyright©GAO
+    </div>
+{% endblock %}

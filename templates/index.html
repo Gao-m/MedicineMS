@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block header %}
+    <div class="logout"  style="margin-right: 100px;">
+        <span>{{ user.first_name }}</span>
+    </div>
+    <div class="btn-group logout">
+        <a href="../logout" class="btn btn-danger">Login out</a>
+    </div>
+{% endblock %}
+{% block dataview %}
+    <div class="container-fluid" style="height: 100%;background: #fff;color: #70a1bc;">
+        <div class="row" style="height: 100%;">
+            <div class="col-md-3" style="padding: 0px; background: yellow">
+
+            </div>
+            <div class="col-md-9" id="data_show_view" style="padding: 0px">
+                 <div class="container-fluid" style="height: 400px;">
+                     <div class="row" style="height: 100%">
+                          <div class="col-md-4" style="background: yellow;">
+                              <div class="row" style="height: 100%;">
+                                  <div class="col-md-4" style="background: wheat;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                                  <div class="col-md-4" style="background: green;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                                  <div class="col-md-4" style="background: wheat;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                              </div>
+                          </div>
+                         <div class="col-md-4" style="background: green;">
+                              <div class="row" style="height: 100%;">
+                                  <div class="col-md-4" style="background: green;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                                  <div class="col-md-4" style="background: wheat;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                                  <div class="col-md-4" style="background: green;padding-left: 0px">
+                                      <div style="height: 100%;width: 100% ;background: red"></div>
+                                  </div>
+                              </div>
+                         </div>
+                         <div class="col-md-4" style="background: yellow;">
+                               <div class="row" style="height: 100%;">
+                                  <div class="col-md-4" style="background: wheat"></div>
+                                  <div class="col-md-4" style="background: green"></div>
+                                  <div class="col-md-4" style="background: wheat"></div>
+                              </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
